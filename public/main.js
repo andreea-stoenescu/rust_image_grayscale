@@ -18,7 +18,7 @@ async function init() {
         const base64 = fileReader.result.replace(
             /^data:image\/(png|jpg|jpeg);base64,/, ''
         );
-        rustApp.grayscale(input.files[0]);
+        rustApp.grayscale(base64);
     }
 
     input.addEventListener('change', () => {
